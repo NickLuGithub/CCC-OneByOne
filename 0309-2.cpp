@@ -33,12 +33,10 @@ bool isLeap(int year)
 
 int print_month(int first_day, int month_day)
 {
-	
     for (int i = 0; i <= first_day-1; i++)
     {
         cout << "   ";
     }
-    
 
     for(int i = 1; i <= month_day; i++)
     {
