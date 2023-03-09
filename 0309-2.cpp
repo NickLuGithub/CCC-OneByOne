@@ -14,7 +14,7 @@ int main ( void ){
     {
     	cout << "      " << i << "     " << endl; 
         if(i == 2) {
-            if(isLeap(Y)) FirstDay = print_month(FirstDay, 29);
+            if(isLeap(Year)) FirstDay = print_month(FirstDay, 29);
             else FirstDay = print_month(FirstDay, 28);
         } else if (i == 4 || i == 6 || i == 9 || i == 11) {
             FirstDay = print_month(FirstDay, 30);
@@ -33,6 +33,8 @@ bool isLeap(int year)
 
 int print_month(int first_day, int month_day)
 {
+	cout << " 一 二 三 四 五 六 日" << endl;
+	
     for (int i = 0; i <= first_day-1; i++)
     {
         cout << "   ";
